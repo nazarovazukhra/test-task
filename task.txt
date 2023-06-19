@@ -1,0 +1,34 @@
+Test task: CRUD application using Spring Boot, PostgreSQL, and other specified technologies.
+Task objective: Create a web application for managing users and projects. Users can be associated with one or multiple projects.
+Requirements:
+•	Use Java 17.
+•	Use Spring Boot version 2.7+.
+•	Use PostgreSQL as the database.
+•	Use Lombok to simplify the code.
+•	Use Gradle or Maven as the project build tool.
+•	Use Spring Data JPA with Hibernate as the ORM.
+•	Use Flyway for database migration management.
+•	Use the @Transactional annotation to ensure transactional operations on the database.
+•	Use the @Valid annotation for input data validation.
+•	Use the @Value annotation for injecting values from configurations.
+•	Tasks:
+1.	Create an entity: "User" with multiple fields (e.g., id, first name, last name).
+2.	Create an entity: "Project" with multiple fields (e.g., id, project name, project manager, number of employees on the project).
+3.	Create Spring Data JPA repositories to manage the "User" and "Project" entities.
+4.	Implement controllers using the @RestController annotation to handle HTTP requests and invoke the corresponding CRUD operations through the repositories.
+5.	Implement controller methods to perform CRUD operations for each entity:
+•	Create a new user/project.
+•	Get a list of all users/projects.
+•	Get information about a specific user/project by its identifier.
+•	Update user/project information.
+•	Delete a user/project.
+•	Get all users by project id.
+1.	Add input data validation for creating and updating users/projects using the @Valid annotation.
+2.	Use the @Transactional annotation to ensure transactional operations on the database when creating and updating users/projects.
+3.	Use the @Value annotation to inject configuration values (e.g., database connection parameters) from an external configuration file.
+4.	Use Flyway to create and manage database migrations.
+5.	Expected outcome:
+6.	A functional web application that allows performing CRUD operations using the specified technologies and verifies transaction handling using the @Transactional annotation.
+7.	The project should include build configuration (Gradle or Maven).
+8.	The code should be well-organized, have comments, and adhere to good programming style principles.
+

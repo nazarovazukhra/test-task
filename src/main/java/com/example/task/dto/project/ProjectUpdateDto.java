@@ -1,0 +1,21 @@
+package com.example.task.dto.project;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ProjectUpdateDto {
+
+    @Min(value = 0, message = "project id must be greater than 0")
+    private Long projectId;
+
+    private String name;
+
+    private String description;
+}
